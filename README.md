@@ -46,18 +46,17 @@ useradd kop
 ```
 
 Then give this user sudo permission, by configuring file:
-``bash
+
+```bash
 visudo
 kop ALL=(ALL) NOPASSWD:ALL
-
-````
-
+```
 
 #### Now you need to add the hosts IP and host names inside the hosts file. For now I am adding 3 hosts.
 
 ```bash
 vim /etc/hosts
-````
+```
 
 ```bash
 143.244.129.224         master.example.com      master
